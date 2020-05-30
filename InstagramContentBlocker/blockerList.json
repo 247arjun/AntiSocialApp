@@ -1,0 +1,18 @@
+[
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "webkit.svg"
+        }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?instagram\\.com[:/]"
+      },
+      "action": {
+        "type": "block"
+      }
+    }
+]
