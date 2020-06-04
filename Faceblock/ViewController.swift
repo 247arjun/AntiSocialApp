@@ -12,10 +12,22 @@ import SafariServices
 class ViewController: UIViewController {
     //MARK: Properties
 
-    @IBOutlet weak var ruleTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
+    
+    //MARK: Actions
+    
+    @IBAction func doOpenSettings(_ sender: UIButton) {
+        if let url = URL(string:UIApplication.openSettingsURLString) {
+           if UIApplication.shared.canOpenURL(url) {
+             UIApplication.shared.open(url, options: [:], completionHandler: nil)
+           }
+        }
+        
+    }
+    
 
 }
