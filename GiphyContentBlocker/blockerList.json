@@ -9,7 +9,7 @@
     },
     {
       "trigger": {
-        "url-filter": "^https?:/+([^/:]+\\.)?instagram\\..*[:/]*"
+        "url-filter": "^https?:/+([^/:]+\\.)?giphy\\..*[:/]*"
       },
       "action": {
         "type": "block"
@@ -17,7 +17,7 @@
     },
     {
       "trigger": {
-        "url-filter": "^https?:/+([^/:]+\\.)?cdninstagram\\..*[:/]*"
+        "url-filter": "^https?:/+([^/:]+\\.)?giphyscripts\\..*[:/]*"
       },
       "action": {
         "type": "block"

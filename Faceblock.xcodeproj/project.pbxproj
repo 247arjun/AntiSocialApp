@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC06DED52496804400635BA9 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = DC06DED42496804400635BA9 /* blockerList.json */; };
+		DC06DED72496804400635BA9 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC06DED62496804400635BA9 /* ContentBlockerRequestHandler.swift */; };
+		DC06DEDB2496804400635BA9 /* GiphyContentBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DC06DED22496804400635BA9 /* GiphyContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DC70ABD6246F426000415155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70ABD5246F426000415155 /* AppDelegate.swift */; };
 		DC70ABD8246F426000415155 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70ABD7246F426000415155 /* SceneDelegate.swift */; };
 		DC70ABDA246F426000415155 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70ABD9246F426000415155 /* ViewController.swift */; };
@@ -22,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DC06DED92496804400635BA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC70ABCA246F426000415155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC06DED12496804400635BA9;
+			remoteInfo = GiphyContentBlocker;
+		};
 		DC70ABF4246F43E800415155 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DC70ABCA246F426000415155 /* Project object */;
@@ -47,6 +57,7 @@
 			files = (
 				DC70AC08246F643400415155 /* InstagramContentBlocker.appex in Embed App Extensions */,
 				DC70ABF6246F43E800415155 /* FaceblockContentBlocker.appex in Embed App Extensions */,
+				DC06DEDB2496804400635BA9 /* GiphyContentBlocker.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +65,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC06DED22496804400635BA9 /* GiphyContentBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GiphyContentBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC06DED42496804400635BA9 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		DC06DED62496804400635BA9 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
+		DC06DED82496804400635BA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC70ABD2246F426000415155 /* Faceblock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faceblock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC70ABD5246F426000415155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC70ABD7246F426000415155 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +88,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DC06DECF2496804400635BA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC70ABCF246F426000415155 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,12 +119,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC06DED32496804400635BA9 /* GiphyContentBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				DC06DED42496804400635BA9 /* blockerList.json */,
+				DC06DED62496804400635BA9 /* ContentBlockerRequestHandler.swift */,
+				DC06DED82496804400635BA9 /* Info.plist */,
+			);
+			path = GiphyContentBlocker;
+			sourceTree = "<group>";
+		};
 		DC70ABC9246F426000415155 = {
 			isa = PBXGroup;
 			children = (
 				DC70ABD4246F426000415155 /* Faceblock */,
 				DC70ABEE246F43E800415155 /* FaceblockContentBlocker */,
 				DC70AC00246F643400415155 /* InstagramContentBlocker */,
+				DC06DED32496804400635BA9 /* GiphyContentBlocker */,
 				DC70ABD3246F426000415155 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +146,7 @@
 				DC70ABD2246F426000415155 /* Faceblock.app */,
 				DC70ABED246F43E800415155 /* FaceblockContentBlocker.appex */,
 				DC70ABFF246F643400415155 /* InstagramContentBlocker.appex */,
+				DC06DED22496804400635BA9 /* GiphyContentBlocker.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,6 +188,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DC06DED12496804400635BA9 /* GiphyContentBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC06DEDC2496804400635BA9 /* Build configuration list for PBXNativeTarget "GiphyContentBlocker" */;
+			buildPhases = (
+				DC06DECE2496804400635BA9 /* Sources */,
+				DC06DECF2496804400635BA9 /* Frameworks */,
+				DC06DED02496804400635BA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GiphyContentBlocker;
+			productName = GiphyContentBlocker;
+			productReference = DC06DED22496804400635BA9 /* GiphyContentBlocker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		DC70ABD1246F426000415155 /* Faceblock */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC70ABE6246F426100415155 /* Build configuration list for PBXNativeTarget "Faceblock" */;
@@ -168,6 +219,7 @@
 			dependencies = (
 				DC70ABF5246F43E800415155 /* PBXTargetDependency */,
 				DC70AC07246F643400415155 /* PBXTargetDependency */,
+				DC06DEDA2496804400635BA9 /* PBXTargetDependency */,
 			);
 			name = Faceblock;
 			productName = Faceblock;
@@ -214,10 +266,13 @@
 		DC70ABCA246F426000415155 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Arjun G";
 				TargetAttributes = {
+					DC06DED12496804400635BA9 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					DC70ABD1246F426000415155 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
@@ -245,11 +300,20 @@
 				DC70ABD1246F426000415155 /* Faceblock */,
 				DC70ABEC246F43E800415155 /* FaceblockContentBlocker */,
 				DC70ABFE246F643400415155 /* InstagramContentBlocker */,
+				DC06DED12496804400635BA9 /* GiphyContentBlocker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DC06DED02496804400635BA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC06DED52496804400635BA9 /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC70ABD0246F426000415155 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,6 +343,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DC06DECE2496804400635BA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC06DED72496804400635BA9 /* ContentBlockerRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC70ABCE246F426000415155 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -308,6 +380,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DC06DEDA2496804400635BA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC06DED12496804400635BA9 /* GiphyContentBlocker */;
+			targetProxy = DC06DED92496804400635BA9 /* PBXContainerItemProxy */;
+		};
 		DC70ABF5246F43E800415155 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DC70ABEC246F43E800415155 /* FaceblockContentBlocker */;
@@ -340,6 +417,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DC06DEDD2496804400635BA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 24CVMV6NZZ;
+				INFOPLIST_FILE = GiphyContentBlocker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock.GiphyContentBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC06DEDE2496804400635BA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 24CVMV6NZZ;
+				INFOPLIST_FILE = GiphyContentBlocker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock.GiphyContentBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DC70ABE4246F426100415155 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -390,7 +513,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -444,7 +567,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -460,12 +583,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 24CVMV6NZZ;
 				INFOPLIST_FILE = Faceblock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -479,12 +604,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 24CVMV6NZZ;
 				INFOPLIST_FILE = Faceblock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -495,8 +622,8 @@
 		DC70ABF8246F43E800415155 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 24CVMV6NZZ;
 				INFOPLIST_FILE = FaceblockContentBlocker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -504,6 +631,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock.FaceblockContentBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -515,8 +643,8 @@
 		DC70ABF9246F43E800415155 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 24CVMV6NZZ;
 				INFOPLIST_FILE = FaceblockContentBlocker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -524,6 +652,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock.FaceblockContentBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -535,8 +664,8 @@
 		DC70AC0A246F643400415155 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 24CVMV6NZZ;
 				INFOPLIST_FILE = InstagramContentBlocker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -544,6 +673,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock.InstagramContentBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -555,8 +685,8 @@
 		DC70AC0B246F643400415155 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 24CVMV6NZZ;
 				INFOPLIST_FILE = InstagramContentBlocker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -564,6 +694,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock.InstagramContentBlocker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -575,6 +706,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC06DEDC2496804400635BA9 /* Build configuration list for PBXNativeTarget "GiphyContentBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC06DEDD2496804400635BA9 /* Debug */,
+				DC06DEDE2496804400635BA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DC70ABCD246F426000415155 /* Build configuration list for PBXProject "Faceblock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

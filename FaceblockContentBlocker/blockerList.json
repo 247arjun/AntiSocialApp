@@ -9,7 +9,7 @@
     },
     {
       "trigger": {
-        "url-filter": "^https?:/+([^/:]+\\.)?facebook\\.com[:/]"
+        "url-filter": "^https?:/+([^/:]+\\.)?facebook.*\\..*[:/]*"
       },
       "action": {
         "type": "block"
@@ -17,7 +17,7 @@
     },
     {
       "trigger": {
-        "url-filter": "^https?:/+([^/:]+\\.)?fb\\.com[:/]"
+        "url-filter": "^https?:/+([^/:]+\\.)?fb\\..*[:/]*"
       },
       "action": {
         "type": "block"
@@ -25,7 +25,7 @@
     },
     {
       "trigger": {
-        "url-filter": "^https?:/+.*facebook.*"
+        "url-filter": "^https?:/+([^/:]+\\.)?messenger\\..*[:/]*"
       },
       "action": {
         "type": "block"
@@ -33,7 +33,7 @@
     },
     {
       "trigger": {
-        "url-filter": "^https?:/+.*fbcdn.*"
+        "url-filter": "^https?:/+([^/:]+\\.)?fbcdn\\..*[:/]*"
       },
       "action": {
         "type": "block"
@@ -41,7 +41,7 @@
     },
     {
       "trigger": {
-        "url-filter": "^https?:/+.*fbsbx.*"
+        "url-filter": "^https?:/+([^/:]+\\.)?fbsbx\\..*[:/]*"
       },
       "action": {
         "type": "block"
@@ -49,15 +49,7 @@
     },
     {
       "trigger": {
-        "url-filter": "^https?:/+.*tfbnw.*"
-      },
-      "action": {
-        "type": "block"
-      }
-    },
-    {
-      "trigger": {
-        "url-filter": "^https?:/+.*whatsapp.*"
+        "url-filter": "^https?:/+([^/:]+\\.)?tfbnw\\..*[:/]*"
       },
       "action": {
         "type": "block"
