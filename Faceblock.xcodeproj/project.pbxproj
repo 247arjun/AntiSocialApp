@@ -7,44 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC06DED52496804400635BA9 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = DC06DED42496804400635BA9 /* blockerList.json */; };
-		DC06DED72496804400635BA9 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC06DED62496804400635BA9 /* ContentBlockerRequestHandler.swift */; };
-		DC06DEDB2496804400635BA9 /* GiphyContentBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DC06DED22496804400635BA9 /* GiphyContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DC70ABD6246F426000415155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70ABD5246F426000415155 /* AppDelegate.swift */; };
 		DC70ABD8246F426000415155 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70ABD7246F426000415155 /* SceneDelegate.swift */; };
 		DC70ABDA246F426000415155 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70ABD9246F426000415155 /* ViewController.swift */; };
 		DC70ABDD246F426000415155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC70ABDB246F426000415155 /* Main.storyboard */; };
 		DC70ABDF246F426100415155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC70ABDE246F426100415155 /* Assets.xcassets */; };
 		DC70ABE2246F426100415155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC70ABE0246F426100415155 /* LaunchScreen.storyboard */; };
-		DC70ABF0246F43E800415155 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = DC70ABEF246F43E800415155 /* blockerList.json */; };
-		DC70ABF2246F43E800415155 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70ABF1246F43E800415155 /* ContentBlockerRequestHandler.swift */; };
-		DC70ABF6246F43E800415155 /* FaceblockContentBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DC70ABED246F43E800415155 /* FaceblockContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DC70AC02246F643400415155 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = DC70AC01246F643400415155 /* blockerList.json */; };
-		DC70AC04246F643400415155 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC70AC03246F643400415155 /* ContentBlockerRequestHandler.swift */; };
-		DC70AC08246F643400415155 /* InstagramContentBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DC70ABFF246F643400415155 /* InstagramContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DC96F09724A5781F000C037F /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = DC96F09624A5781F000C037F /* blockerList.json */; };
+		DC96F09924A5781F000C037F /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC96F09824A5781F000C037F /* ContentBlockerRequestHandler.swift */; };
+		DC96F09D24A5781F000C037F /* antisocial.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DC96F09424A5781F000C037F /* antisocial.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DC06DED92496804400635BA9 /* PBXContainerItemProxy */ = {
+		DC96F09B24A5781F000C037F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DC70ABCA246F426000415155 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DC06DED12496804400635BA9;
-			remoteInfo = GiphyContentBlocker;
-		};
-		DC70ABF4246F43E800415155 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DC70ABCA246F426000415155 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DC70ABEC246F43E800415155;
-			remoteInfo = FaceblockContentBlocker;
-		};
-		DC70AC06246F643400415155 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DC70ABCA246F426000415155 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DC70ABFE246F643400415155;
-			remoteInfo = InstagramContentBlocker;
+			remoteGlobalIDString = DC96F09324A5781F000C037F;
+			remoteInfo = antisocial;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -55,9 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				DC70AC08246F643400415155 /* InstagramContentBlocker.appex in Embed App Extensions */,
-				DC70ABF6246F43E800415155 /* FaceblockContentBlocker.appex in Embed App Extensions */,
-				DC06DEDB2496804400635BA9 /* GiphyContentBlocker.appex in Embed App Extensions */,
+				DC96F09D24A5781F000C037F /* antisocial.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,11 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DC06DED22496804400635BA9 /* GiphyContentBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GiphyContentBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC06DED42496804400635BA9 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
-		DC06DED62496804400635BA9 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
-		DC06DED82496804400635BA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC70ABD2246F426000415155 /* Faceblock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faceblock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC70ABD2246F426000415155 /* AntiSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AntiSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC70ABD5246F426000415155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC70ABD7246F426000415155 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DC70ABD9246F426000415155 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,24 +51,13 @@
 		DC70ABDE246F426100415155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC70ABE1246F426100415155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC70ABE3246F426100415155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC70ABED246F43E800415155 /* FaceblockContentBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FaceblockContentBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC70ABEF246F43E800415155 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
-		DC70ABF1246F43E800415155 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
-		DC70ABF3246F43E800415155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC70ABFF246F643400415155 /* InstagramContentBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = InstagramContentBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC70AC01246F643400415155 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
-		DC70AC03246F643400415155 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
-		DC70AC05246F643400415155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC96F09424A5781F000C037F /* antisocial.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = antisocial.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC96F09624A5781F000C037F /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		DC96F09824A5781F000C037F /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
+		DC96F09A24A5781F000C037F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DC06DECF2496804400635BA9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DC70ABCF246F426000415155 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,14 +65,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC70ABEA246F43E800415155 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC70ABFC246F643400415155 /* Frameworks */ = {
+		DC96F09124A5781F000C037F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,23 +75,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC06DED32496804400635BA9 /* GiphyContentBlocker */ = {
-			isa = PBXGroup;
-			children = (
-				DC06DED42496804400635BA9 /* blockerList.json */,
-				DC06DED62496804400635BA9 /* ContentBlockerRequestHandler.swift */,
-				DC06DED82496804400635BA9 /* Info.plist */,
-			);
-			path = GiphyContentBlocker;
-			sourceTree = "<group>";
-		};
 		DC70ABC9246F426000415155 = {
 			isa = PBXGroup;
 			children = (
 				DC70ABD4246F426000415155 /* Faceblock */,
-				DC70ABEE246F43E800415155 /* FaceblockContentBlocker */,
-				DC70AC00246F643400415155 /* InstagramContentBlocker */,
-				DC06DED32496804400635BA9 /* GiphyContentBlocker */,
+				DC96F09524A5781F000C037F /* antisocial */,
 				DC70ABD3246F426000415155 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,10 +87,8 @@
 		DC70ABD3246F426000415155 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC70ABD2246F426000415155 /* Faceblock.app */,
-				DC70ABED246F43E800415155 /* FaceblockContentBlocker.appex */,
-				DC70ABFF246F643400415155 /* InstagramContentBlocker.appex */,
-				DC06DED22496804400635BA9 /* GiphyContentBlocker.appex */,
+				DC70ABD2246F426000415155 /* AntiSocial.app */,
+				DC96F09424A5781F000C037F /* antisocial.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,46 +107,19 @@
 			path = Faceblock;
 			sourceTree = "<group>";
 		};
-		DC70ABEE246F43E800415155 /* FaceblockContentBlocker */ = {
+		DC96F09524A5781F000C037F /* antisocial */ = {
 			isa = PBXGroup;
 			children = (
-				DC70ABEF246F43E800415155 /* blockerList.json */,
-				DC70ABF1246F43E800415155 /* ContentBlockerRequestHandler.swift */,
-				DC70ABF3246F43E800415155 /* Info.plist */,
+				DC96F09624A5781F000C037F /* blockerList.json */,
+				DC96F09824A5781F000C037F /* ContentBlockerRequestHandler.swift */,
+				DC96F09A24A5781F000C037F /* Info.plist */,
 			);
-			path = FaceblockContentBlocker;
-			sourceTree = "<group>";
-		};
-		DC70AC00246F643400415155 /* InstagramContentBlocker */ = {
-			isa = PBXGroup;
-			children = (
-				DC70AC01246F643400415155 /* blockerList.json */,
-				DC70AC03246F643400415155 /* ContentBlockerRequestHandler.swift */,
-				DC70AC05246F643400415155 /* Info.plist */,
-			);
-			path = InstagramContentBlocker;
+			path = antisocial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC06DED12496804400635BA9 /* GiphyContentBlocker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DC06DEDC2496804400635BA9 /* Build configuration list for PBXNativeTarget "GiphyContentBlocker" */;
-			buildPhases = (
-				DC06DECE2496804400635BA9 /* Sources */,
-				DC06DECF2496804400635BA9 /* Frameworks */,
-				DC06DED02496804400635BA9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GiphyContentBlocker;
-			productName = GiphyContentBlocker;
-			productReference = DC06DED22496804400635BA9 /* GiphyContentBlocker.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		DC70ABD1246F426000415155 /* Faceblock */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC70ABE6246F426100415155 /* Build configuration list for PBXNativeTarget "Faceblock" */;
@@ -217,47 +132,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				DC70ABF5246F43E800415155 /* PBXTargetDependency */,
-				DC70AC07246F643400415155 /* PBXTargetDependency */,
-				DC06DEDA2496804400635BA9 /* PBXTargetDependency */,
+				DC96F09C24A5781F000C037F /* PBXTargetDependency */,
 			);
 			name = Faceblock;
 			productName = Faceblock;
-			productReference = DC70ABD2246F426000415155 /* Faceblock.app */;
+			productReference = DC70ABD2246F426000415155 /* AntiSocial.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DC70ABEC246F43E800415155 /* FaceblockContentBlocker */ = {
+		DC96F09324A5781F000C037F /* antisocial */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC70ABF7246F43E800415155 /* Build configuration list for PBXNativeTarget "FaceblockContentBlocker" */;
+			buildConfigurationList = DC96F09E24A5781F000C037F /* Build configuration list for PBXNativeTarget "antisocial" */;
 			buildPhases = (
-				DC70ABE9246F43E800415155 /* Sources */,
-				DC70ABEA246F43E800415155 /* Frameworks */,
-				DC70ABEB246F43E800415155 /* Resources */,
+				DC96F09024A5781F000C037F /* Sources */,
+				DC96F09124A5781F000C037F /* Frameworks */,
+				DC96F09224A5781F000C037F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FaceblockContentBlocker;
-			productName = FaceblockContentBlocker;
-			productReference = DC70ABED246F43E800415155 /* FaceblockContentBlocker.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		DC70ABFE246F643400415155 /* InstagramContentBlocker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DC70AC09246F643400415155 /* Build configuration list for PBXNativeTarget "InstagramContentBlocker" */;
-			buildPhases = (
-				DC70ABFB246F643400415155 /* Sources */,
-				DC70ABFC246F643400415155 /* Frameworks */,
-				DC70ABFD246F643400415155 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = InstagramContentBlocker;
-			productName = InstagramContentBlocker;
-			productReference = DC70ABFF246F643400415155 /* InstagramContentBlocker.appex */;
+			name = antisocial;
+			productName = antisocial;
+			productReference = DC96F09424A5781F000C037F /* antisocial.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -270,17 +166,11 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Arjun G";
 				TargetAttributes = {
-					DC06DED12496804400635BA9 = {
-						CreatedOnToolsVersion = 11.5;
-					};
 					DC70ABD1246F426000415155 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
-					DC70ABEC246F43E800415155 = {
-						CreatedOnToolsVersion = 11.4.1;
-					};
-					DC70ABFE246F643400415155 = {
-						CreatedOnToolsVersion = 11.4.1;
+					DC96F09324A5781F000C037F = {
+						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
@@ -298,22 +188,12 @@
 			projectRoot = "";
 			targets = (
 				DC70ABD1246F426000415155 /* Faceblock */,
-				DC70ABEC246F43E800415155 /* FaceblockContentBlocker */,
-				DC70ABFE246F643400415155 /* InstagramContentBlocker */,
-				DC06DED12496804400635BA9 /* GiphyContentBlocker */,
+				DC96F09324A5781F000C037F /* antisocial */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DC06DED02496804400635BA9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC06DED52496804400635BA9 /* blockerList.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DC70ABD0246F426000415155 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,33 +204,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC70ABEB246F43E800415155 /* Resources */ = {
+		DC96F09224A5781F000C037F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC70ABF0246F43E800415155 /* blockerList.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC70ABFD246F643400415155 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC70AC02246F643400415155 /* blockerList.json in Resources */,
+				DC96F09724A5781F000C037F /* blockerList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DC06DECE2496804400635BA9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC06DED72496804400635BA9 /* ContentBlockerRequestHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DC70ABCE246F426000415155 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,39 +225,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC70ABE9246F43E800415155 /* Sources */ = {
+		DC96F09024A5781F000C037F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC70ABF2246F43E800415155 /* ContentBlockerRequestHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC70ABFB246F643400415155 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC70AC04246F643400415155 /* ContentBlockerRequestHandler.swift in Sources */,
+				DC96F09924A5781F000C037F /* ContentBlockerRequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DC06DEDA2496804400635BA9 /* PBXTargetDependency */ = {
+		DC96F09C24A5781F000C037F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DC06DED12496804400635BA9 /* GiphyContentBlocker */;
-			targetProxy = DC06DED92496804400635BA9 /* PBXContainerItemProxy */;
-		};
-		DC70ABF5246F43E800415155 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DC70ABEC246F43E800415155 /* FaceblockContentBlocker */;
-			targetProxy = DC70ABF4246F43E800415155 /* PBXContainerItemProxy */;
-		};
-		DC70AC07246F643400415155 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DC70ABFE246F643400415155 /* InstagramContentBlocker */;
-			targetProxy = DC70AC06246F643400415155 /* PBXContainerItemProxy */;
+			target = DC96F09324A5781F000C037F /* antisocial */;
+			targetProxy = DC96F09B24A5781F000C037F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -417,52 +263,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DC06DEDD2496804400635BA9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 24CVMV6NZZ;
-				INFOPLIST_FILE = GiphyContentBlocker/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock.GiphyContentBlocker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		DC06DEDE2496804400635BA9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 24CVMV6NZZ;
-				INFOPLIST_FILE = GiphyContentBlocker/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock.GiphyContentBlocker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		DC70ABE4246F426100415155 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -592,7 +392,7 @@
 				);
 				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AntiSocial;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -613,26 +413,26 @@
 				);
 				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AntiSocial;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		DC70ABF8246F43E800415155 /* Debug */ = {
+		DC96F09F24A5781F000C037F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 24CVMV6NZZ;
-				INFOPLIST_FILE = FaceblockContentBlocker/Info.plist;
+				INFOPLIST_FILE = antisocial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock.FaceblockContentBlocker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock.antisocial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -640,62 +440,20 @@
 			};
 			name = Debug;
 		};
-		DC70ABF9246F43E800415155 /* Release */ = {
+		DC96F0A024A5781F000C037F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 24CVMV6NZZ;
-				INFOPLIST_FILE = FaceblockContentBlocker/Info.plist;
+				INFOPLIST_FILE = antisocial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock.FaceblockContentBlocker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		DC70AC0A246F643400415155 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 24CVMV6NZZ;
-				INFOPLIST_FILE = InstagramContentBlocker/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock.InstagramContentBlocker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		DC70AC0B246F643400415155 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 24CVMV6NZZ;
-				INFOPLIST_FILE = InstagramContentBlocker/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock.InstagramContentBlocker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock.antisocial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -706,15 +464,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC06DEDC2496804400635BA9 /* Build configuration list for PBXNativeTarget "GiphyContentBlocker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC06DEDD2496804400635BA9 /* Debug */,
-				DC06DEDE2496804400635BA9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		DC70ABCD246F426000415155 /* Build configuration list for PBXProject "Faceblock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -733,20 +482,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC70ABF7246F43E800415155 /* Build configuration list for PBXNativeTarget "FaceblockContentBlocker" */ = {
+		DC96F09E24A5781F000C037F /* Build configuration list for PBXNativeTarget "antisocial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC70ABF8246F43E800415155 /* Debug */,
-				DC70ABF9246F43E800415155 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DC70AC09246F643400415155 /* Build configuration list for PBXNativeTarget "InstagramContentBlocker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC70AC0A246F643400415155 /* Debug */,
-				DC70AC0B246F643400415155 /* Release */,
+				DC96F09F24A5781F000C037F /* Debug */,
+				DC96F0A024A5781F000C037F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
