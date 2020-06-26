@@ -1,0 +1,26 @@
+[
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "webkit.svg"
+        }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?linkedin.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?licdn.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    }
+]

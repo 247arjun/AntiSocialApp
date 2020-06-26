@@ -1,6 +1,6 @@
 //
 //  ContentBlockerRequestHandler.swift
-//  antisocial
+//  unlinked-blocker
 //
 //  Created by Arjun Gopalakrishna on 25-Jun-20.
 //  Copyright © 2020 Arjun G. All rights reserved.

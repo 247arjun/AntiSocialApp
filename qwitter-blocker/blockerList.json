@@ -1,0 +1,42 @@
+[
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "webkit.svg"
+        }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?twitter.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?twttr.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?twimg.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?t\\.co\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    }
+]

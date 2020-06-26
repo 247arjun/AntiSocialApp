@@ -1,7 +1,6 @@
-# Faceblock
+# AntiSocial
 
-Faceblock is an iOS/iPadOS app that is a Safari Content Blocker for Facebook and associated websites.
+AntiSocial is an iOS/iPadOS app that is a Safari Content Blocker for multiple social networks and associated websites.
 
 ## Block List
-The blocked URLs are specified in specific JSON files
-- For Facebook, use FaceblockContentBlocker/blockerList.json
+The blocked URLs are specified in blockerList.json
