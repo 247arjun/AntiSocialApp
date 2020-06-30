@@ -81,14 +81,6 @@
     },
     {
       "trigger": {
-        "url-filter": "^https?:/+([^/:]+\\.)?licdn.*\\..*[:/]*"
-      },
-      "action": {
-        "type": "block"
-      }
-    },
-    {
-      "trigger": {
         "url-filter": "^https?:/+([^/:]+\\.)?sgsnssdk.*\\..*[:/]*"
       },
       "action": {
@@ -118,8 +110,7 @@
       "action": {
         "type": "block"
       }
-    }
-    ,
+    },
     {
       "trigger": {
         "url-filter": "^https?:/+([^/:]+\\.)?ibyteimg.*\\..*[:/]*"
