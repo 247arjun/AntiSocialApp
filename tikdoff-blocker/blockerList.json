@@ -1,0 +1,131 @@
+[
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "webkit.svg"
+        }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?musically.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?musical\\.ly\\..*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?bytedance.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?byteimg.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?byteoversea.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?app-measurement.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?isnssdk.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?tiktokv.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?tiktok.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?licdn.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?sgsnssdk.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?snssdk.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?tiktokcdn.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    },
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?musccdn.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    }
+    ,
+    {
+      "trigger": {
+        "url-filter": "^https?:/+([^/:]+\\.)?ibyteimg.*\\..*[:/]*"
+      },
+      "action": {
+        "type": "block"
+      }
+    }
+]

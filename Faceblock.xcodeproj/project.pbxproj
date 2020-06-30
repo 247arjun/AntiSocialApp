@@ -22,6 +22,9 @@
 		DC96F0CA24A5B923000C037F /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = DC96F0C924A5B923000C037F /* blockerList.json */; };
 		DC96F0CC24A5B923000C037F /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC96F0CB24A5B923000C037F /* ContentBlockerRequestHandler.swift */; };
 		DC96F0D024A5B923000C037F /* unlinked-blocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DC96F0C724A5B923000C037F /* unlinked-blocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DC96F0DB24ABAB12000C037F /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = DC96F0DA24ABAB12000C037F /* blockerList.json */; };
+		DC96F0DD24ABAB12000C037F /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC96F0DC24ABAB12000C037F /* ContentBlockerRequestHandler.swift */; };
+		DC96F0E124ABAB13000C037F /* tikdoff-blocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DC96F0D824ABAB12000C037F /* tikdoff-blocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,13 @@
 			remoteGlobalIDString = DC96F0C624A5B923000C037F;
 			remoteInfo = "unlinked-blocker";
 		};
+		DC96F0DF24ABAB13000C037F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC70ABCA246F426000415155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC96F0D724ABAB12000C037F;
+			remoteInfo = "tikdoff-blocker";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +68,7 @@
 				DC96F0D024A5B923000C037F /* unlinked-blocker.appex in Embed App Extensions */,
 				DC96F0BF24A5B911000C037F /* qwitter-blocker.appex in Embed App Extensions */,
 				DC96F0AE24A5B8E9000C037F /* faceblock-blocker.appex in Embed App Extensions */,
+				DC96F0E124ABAB13000C037F /* tikdoff-blocker.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +96,10 @@
 		DC96F0C924A5B923000C037F /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
 		DC96F0CB24A5B923000C037F /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
 		DC96F0CD24A5B923000C037F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC96F0D824ABAB12000C037F /* tikdoff-blocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "tikdoff-blocker.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC96F0DA24ABAB12000C037F /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		DC96F0DC24ABAB12000C037F /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
+		DC96F0DE24ABAB12000C037F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +131,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC96F0D524ABAB12000C037F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -126,6 +148,7 @@
 				DC96F0A624A5B8E9000C037F /* faceblock-blocker */,
 				DC96F0B724A5B911000C037F /* qwitter-blocker */,
 				DC96F0C824A5B923000C037F /* unlinked-blocker */,
+				DC96F0D924ABAB12000C037F /* tikdoff-blocker */,
 				DC70ABD3246F426000415155 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,6 +160,7 @@
 				DC96F0A524A5B8E9000C037F /* faceblock-blocker.appex */,
 				DC96F0B624A5B911000C037F /* qwitter-blocker.appex */,
 				DC96F0C724A5B923000C037F /* unlinked-blocker.appex */,
+				DC96F0D824ABAB12000C037F /* tikdoff-blocker.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,6 +209,16 @@
 			path = "unlinked-blocker";
 			sourceTree = "<group>";
 		};
+		DC96F0D924ABAB12000C037F /* tikdoff-blocker */ = {
+			isa = PBXGroup;
+			children = (
+				DC96F0DA24ABAB12000C037F /* blockerList.json */,
+				DC96F0DC24ABAB12000C037F /* ContentBlockerRequestHandler.swift */,
+				DC96F0DE24ABAB12000C037F /* Info.plist */,
+			);
+			path = "tikdoff-blocker";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,6 +237,7 @@
 				DC96F0AD24A5B8E9000C037F /* PBXTargetDependency */,
 				DC96F0BE24A5B911000C037F /* PBXTargetDependency */,
 				DC96F0CF24A5B923000C037F /* PBXTargetDependency */,
+				DC96F0E024ABAB13000C037F /* PBXTargetDependency */,
 			);
 			name = Faceblock;
 			productName = Faceblock;
@@ -260,6 +295,23 @@
 			productReference = DC96F0C724A5B923000C037F /* unlinked-blocker.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		DC96F0D724ABAB12000C037F /* tikdoff-blocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC96F0E224ABAB13000C037F /* Build configuration list for PBXNativeTarget "tikdoff-blocker" */;
+			buildPhases = (
+				DC96F0D424ABAB12000C037F /* Sources */,
+				DC96F0D524ABAB12000C037F /* Frameworks */,
+				DC96F0D624ABAB12000C037F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tikdoff-blocker";
+			productName = "tikdoff-blocker";
+			productReference = DC96F0D824ABAB12000C037F /* tikdoff-blocker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -282,6 +334,9 @@
 					DC96F0C624A5B923000C037F = {
 						CreatedOnToolsVersion = 11.5;
 					};
+					DC96F0D724ABAB12000C037F = {
+						CreatedOnToolsVersion = 11.5;
+					};
 				};
 			};
 			buildConfigurationList = DC70ABCD246F426000415155 /* Build configuration list for PBXProject "Faceblock" */;
@@ -301,6 +356,7 @@
 				DC96F0A424A5B8E9000C037F /* faceblock-blocker */,
 				DC96F0B524A5B911000C037F /* qwitter-blocker */,
 				DC96F0C624A5B923000C037F /* unlinked-blocker */,
+				DC96F0D724ABAB12000C037F /* tikdoff-blocker */,
 			);
 		};
 /* End PBXProject section */
@@ -337,6 +393,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC96F0CA24A5B923000C037F /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC96F0D624ABAB12000C037F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC96F0DB24ABAB12000C037F /* blockerList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +441,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC96F0D424ABAB12000C037F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC96F0DD24ABAB12000C037F /* ContentBlockerRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -394,6 +466,11 @@
 			isa = PBXTargetDependency;
 			target = DC96F0C624A5B923000C037F /* unlinked-blocker */;
 			targetProxy = DC96F0CE24A5B923000C037F /* PBXContainerItemProxy */;
+		};
+		DC96F0E024ABAB13000C037F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC96F0D724ABAB12000C037F /* tikdoff-blocker */;
+			targetProxy = DC96F0DF24ABAB13000C037F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -537,14 +614,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 24CVMV6NZZ;
 				INFOPLIST_FILE = Faceblock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock;
 				PRODUCT_NAME = "Anti-Social";
 				SWIFT_VERSION = 5.0;
@@ -558,14 +635,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 24CVMV6NZZ;
 				INFOPLIST_FILE = Faceblock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arjungo.faceblock;
 				PRODUCT_NAME = "Anti-Social";
 				SWIFT_VERSION = 5.0;
@@ -578,6 +655,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 24CVMV6NZZ;
 				INFOPLIST_FILE = "faceblock-blocker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
@@ -586,6 +664,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.arjungo.faceblock.faceblock-blocker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -599,6 +678,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 24CVMV6NZZ;
 				INFOPLIST_FILE = "faceblock-blocker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
@@ -607,6 +687,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.arjungo.faceblock.faceblock-blocker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -620,6 +701,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 24CVMV6NZZ;
 				INFOPLIST_FILE = "qwitter-blocker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
@@ -628,6 +710,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.arjungo.faceblock.qwitter-blocker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -641,6 +724,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 24CVMV6NZZ;
 				INFOPLIST_FILE = "qwitter-blocker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
@@ -649,6 +733,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.arjungo.faceblock.qwitter-blocker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -662,6 +747,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 24CVMV6NZZ;
 				INFOPLIST_FILE = "unlinked-blocker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
@@ -670,6 +756,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.arjungo.faceblock.unlinked-blocker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -683,6 +770,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 24CVMV6NZZ;
 				INFOPLIST_FILE = "unlinked-blocker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
@@ -691,7 +779,50 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.arjungo.faceblock.unlinked-blocker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC96F0E324ABAB13000C037F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24CVMV6NZZ;
+				INFOPLIST_FILE = "tikdoff-blocker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arjungo.faceblock.tikdoff-blocker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC96F0E424ABAB13000C037F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24CVMV6NZZ;
+				INFOPLIST_FILE = "tikdoff-blocker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arjungo.faceblock.tikdoff-blocker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -743,6 +874,15 @@
 			buildConfigurations = (
 				DC96F0D224A5B923000C037F /* Debug */,
 				DC96F0D324A5B923000C037F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC96F0E224ABAB13000C037F /* Build configuration list for PBXNativeTarget "tikdoff-blocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC96F0E324ABAB13000C037F /* Debug */,
+				DC96F0E424ABAB13000C037F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
